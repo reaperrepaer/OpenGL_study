@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C++ Express 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "00_空のウィンドウを描画", "Project\00_空のウィンドウを描画.vcxproj", "{473FCCDA-A610-46B1-9D63-20750B09AC7B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "00_空のウィンドウを表示", "Project\00_空のウィンドウを表示.vcxproj", "{473FCCDA-A610-46B1-9D63-20750B09AC7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
