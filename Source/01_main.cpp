@@ -1,3 +1,8 @@
+/**
+ * Referenced :
+ * http://www21.atwiki.jp/opengl/pages/19.html
+ * http://wisdom.sakura.ne.jp/system/opengl/gl2.html
+ */
 #pragma comment(linker, "/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
 #include <freegl/glut.h>
 

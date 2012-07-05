@@ -1,3 +1,7 @@
+/**
+ * Referenced :
+ * http://www21.atwiki.jp/opengl/pages/20.html
+ */
 #pragma comment(linker, "/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
 #include <cstdint>
 #include <freegl/glut.h>
