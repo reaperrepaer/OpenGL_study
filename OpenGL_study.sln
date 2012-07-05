@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_線の描画", "Project\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_四角形の描画", "Project\04_四角形の描画.vcxproj", "{4EBFD1D1-7A2A-44F4-8DCD-3E31AB2EA1A6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05_円の描画", "Project\05_円の描画.vcxproj", "{9F5E4422-4A3E-407F-91F5-2B3C9B487EF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -49,6 +51,10 @@ Global
 		{4EBFD1D1-7A2A-44F4-8DCD-3E31AB2EA1A6}.Debug|Win32.Build.0 = Debug|Win32
 		{4EBFD1D1-7A2A-44F4-8DCD-3E31AB2EA1A6}.Release|Win32.ActiveCfg = Release|Win32
 		{4EBFD1D1-7A2A-44F4-8DCD-3E31AB2EA1A6}.Release|Win32.Build.0 = Release|Win32
+		{9F5E4422-4A3E-407F-91F5-2B3C9B487EF8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9F5E4422-4A3E-407F-91F5-2B3C9B487EF8}.Debug|Win32.Build.0 = Debug|Win32
+		{9F5E4422-4A3E-407F-91F5-2B3C9B487EF8}.Release|Win32.ActiveCfg = Release|Win32
+		{9F5E4422-4A3E-407F-91F5-2B3C9B487EF8}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
