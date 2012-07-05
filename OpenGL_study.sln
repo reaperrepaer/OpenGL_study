@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_ウィンドウサイズ
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestLib", "Project\TestLib.vcxproj", "{882157D9-921E-4890-87EE-46D731581733}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_点の描画", "Project\02_点の描画.vcxproj", "{F3396EC5-DCAC-40CF-AEBF-192F76BF1A28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -31,6 +33,10 @@ Global
 		{882157D9-921E-4890-87EE-46D731581733}.Debug|Win32.Build.0 = Debug|Win32
 		{882157D9-921E-4890-87EE-46D731581733}.Release|Win32.ActiveCfg = Release|Win32
 		{882157D9-921E-4890-87EE-46D731581733}.Release|Win32.Build.0 = Release|Win32
+		{F3396EC5-DCAC-40CF-AEBF-192F76BF1A28}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F3396EC5-DCAC-40CF-AEBF-192F76BF1A28}.Debug|Win32.Build.0 = Debug|Win32
+		{F3396EC5-DCAC-40CF-AEBF-192F76BF1A28}.Release|Win32.ActiveCfg = Release|Win32
+		{F3396EC5-DCAC-40CF-AEBF-192F76BF1A28}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
