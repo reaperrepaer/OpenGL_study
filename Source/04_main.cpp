@@ -1,4 +1,4 @@
-/**
+ï»¿/**
  * Referenced :
  * http://www21.atwiki.jp/opengl/pages/22.html
  */
@@ -22,7 +22,7 @@ void terminate() {
 void display() {
 	glClear( GL_COLOR_BUFFER_BIT );
 
-	// lŠp˜g•`‰æ
+	// å››è§’æ æç”»
 	glColor4f( 1.0f, 0.0f, 0.0f, 1.0f );
 	glLineWidth( 1.0f );
 	glBegin( GL_LINE_LOOP );
@@ -32,7 +32,7 @@ void display() {
 	glVertex2i( 100, 200 );
 	glEnd();
 
-	// lŠpŒ`(“h‚è‚Â‚Ô‚µ)•`‰æ
+	// å››è§’å½¢(å¡—ã‚Šã¤ã¶ã—)æç”»
 	glColor4f( 0.0f, 1.0f, 0.0f, 1.0f );
 	glBegin( GL_QUADS );
 	glVertex2i( 0, 0 );
@@ -41,7 +41,7 @@ void display() {
 	glVertex2i( 0, 100 );
 	glEnd();
 
-	// ‹éŒ`‚Å‚ ‚é•K—v‚Í‚È‚¢B
+	// çŸ©å½¢ã§ã‚ã‚‹å¿…è¦ã¯ãªã„ã€‚
 	glColor4f( 0.0f, 0.0f, 1.0f, 1.0f );
 	glBegin( GL_QUADS );
 	glVertex2i( 200, 0 );

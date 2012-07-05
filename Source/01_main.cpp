@@ -1,4 +1,4 @@
-/**
+ï»¿/**
  * Referenced :
  * http://www21.atwiki.jp/opengl/pages/19.html
  * http://wisdom.sakura.ne.jp/system/opengl/gl2.html
@@ -13,10 +13,10 @@ void display() {
 }
 
 int main( int argc, char *argv[] ) {
-	// ƒEƒBƒ“ƒhƒE‚Ì‰ŠúˆÊ’u‚ğw’è
+	// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®åˆæœŸä½ç½®ã‚’æŒ‡å®š
 	glutInitWindowPosition( 100, 100 );
-	// ƒEƒBƒ“ƒhƒE‚ÌƒTƒCƒY‚ğw’è
-	glutInitWindowSize( DISPLAY_WIDTH, DISPLAY_HEIGHT );
+	// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®ã‚µã‚¤ã‚ºã‚’æŒ‡å®š
+	glutInitWindowSize( 320, 240 );
 
 	glutInit( &argc, argv );
 	glutInitDisplayMode( GLUT_RGBA );

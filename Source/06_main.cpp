@@ -1,4 +1,4 @@
-/**
+ï»¿/**
  * Referenced :
  * http://www21.atwiki.jp/opengl/pages/23.html
  */
@@ -34,7 +34,7 @@ void display() {
 	glClear( GL_COLOR_BUFFER_BIT );
 
 	glColor4f( 1.0f, 0.0f, 0.0f, 1.0f );
-	glPointSize( 20.0f );// ƒTƒCƒYİ’è‚ÍBegin‚Ì‘O‚É‚â‚ç‚È‚¢‚Æƒ_ƒ‚Á‚Û‚¢
+	glPointSize( 20.0f );// ã‚µã‚¤ã‚ºè¨­å®šã¯Beginã®å‰ã«ã‚„ã‚‰ãªã„ã¨ãƒ€ãƒ¡ã£ã½ã„
 	glBegin( GL_POINTS );
 	glVertex2i( x, y );
 	glEnd();
@@ -44,12 +44,12 @@ void display() {
 	if ( x < 0 || x > DISPLAY_WIDTH-w ) vx *= -1.0f;
 	if ( y < 0 || y > DISPLAY_HEIGHT-h ) vy *= -1.0f;
 
-	// glFlush()‚Å‚Í‚È‚­Aƒoƒbƒtƒ@‚ğƒXƒƒbƒv‚·‚é
+	// glFlush()ã§ã¯ãªãã€ãƒãƒƒãƒ•ã‚¡ã‚’ã‚¹ãƒ¯ãƒƒãƒ—ã™ã‚‹
 	glutSwapBuffers();
 }
 
 void idle() {
-	// ‰½‚àƒCƒxƒ“ƒg‚ª‚È‚­‚Ä‚àí‚ÉÄ•`‰æ‚³‚¹‚é
+	// ä½•ã‚‚ã‚¤ãƒ™ãƒ³ãƒˆãŒãªãã¦ã‚‚å¸¸ã«å†æç”»ã•ã›ã‚‹
 	glutPostRedisplay();
 }
 
@@ -57,11 +57,11 @@ int main( int argc, char *argv[] ) {
 	glutInitWindowPosition( 100, 100 );
 	glutInitWindowSize( DISPLAY_WIDTH, DISPLAY_HEIGHT );
 	glutInit( &argc, argv );
-	// ƒ_ƒuƒ‹ƒoƒbƒtƒ@ƒŠƒ“ƒO‚Ìİ’è‚ğ’Ç‰Á5
+	// ãƒ€ãƒ–ãƒ«ãƒãƒƒãƒ•ã‚¡ãƒªãƒ³ã‚°ã®è¨­å®šã‚’è¿½åŠ 5
 	glutInitDisplayMode( GLUT_RGBA | GLUT_DOUBLE );
 	glutCreateWindow( "Hello OpenGL!!" );
 	glutDisplayFunc( display );
-	// ƒEƒBƒ“ƒhƒE‚ÉƒCƒxƒ“ƒg‚ª”­¶‚µ‚Ä‚¢‚È‚¢‚Æ‚«‚ÉŒÄ‚Î‚ê‚éƒR[ƒ‹ƒoƒbƒNŠÖ”‚ğİ’è
+	// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã«ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºç”Ÿã—ã¦ã„ãªã„ã¨ãã«å‘¼ã°ã‚Œã‚‹ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯é–¢æ•°ã‚’è¨­å®š
 	glutIdleFunc( idle );
 
 	initialize();

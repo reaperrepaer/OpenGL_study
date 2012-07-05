@@ -1,4 +1,4 @@
-/**
+ï»¿/**
  * Referenced :
  * http://www21.atwiki.jp/opengl/pages/20.html
  * http://exlight.net/devel/cpp/unnamed_namespace.html
@@ -8,18 +8,18 @@
 #include <cstdint>
 #include <freegl/glut.h>
 
-// C++‚Å‚Íƒtƒ@ƒCƒ‹ƒXƒR[ƒv‚Ì•Ï”‚Ístatic‚ğ•t‚¯‚é‚Ì‚Å‚Í‚È‚­–³–¼–¼‘O‹óŠÔ‚É“Ë‚Á‚ŞB
-// static‚ªg‚¤êŠ‚É‚æ‚Á‚ÄˆÓ–¡‚ª•Ï‚í‚Á‚Ä•ª‚©‚è‚É‚­‚¢‚©‚ç‚ç‚µ‚¢B
+// C++ã§ã¯ãƒ•ã‚¡ã‚¤ãƒ«ã‚¹ã‚³ãƒ¼ãƒ—ã®å¤‰æ•°ã¯staticã‚’ä»˜ã‘ã‚‹ã®ã§ã¯ãªãç„¡ååå‰ç©ºé–“ã«çªã£è¾¼ã‚€ã€‚
+// staticãŒä½¿ã†å ´æ‰€ã«ã‚ˆã£ã¦æ„å‘³ãŒå¤‰ã‚ã£ã¦åˆ†ã‹ã‚Šã«ãã„ã‹ã‚‰ã‚‰ã—ã„ã€‚
 namespace {
 	const int DISPLAY_WIDTH = 320;
 	const int DISPLAY_HEIGHT = 240;
 }// unnamed namespace
 
 void initialize() {
-	// ƒNƒŠƒAƒJƒ‰[‚Ìİ’è‚Í–ˆƒtƒŒ•Ï‚¦‚é•K—v‚Í‚È‚¢
+	// ã‚¯ãƒªã‚¢ã‚«ãƒ©ãƒ¼ã®è¨­å®šã¯æ¯ãƒ•ãƒ¬å¤‰ãˆã‚‹å¿…è¦ã¯ãªã„
 	glClearColor( 1.0f, 1.0f, 1.0f, 1.0f );
-	// Ë‰e•ÏŠ·‚ğ³Ë‰e‚Éİ’è
-	// ˆø”‚Ì‡”Ô‚É’ˆÓBleft, top, right, bottom‚Å‚Í‚È‚¢B
+	// å°„å½±å¤‰æ›ã‚’æ­£å°„å½±ã«è¨­å®š
+	// å¼•æ•°ã®é †ç•ªã«æ³¨æ„ã€‚left, top, right, bottomã§ã¯ãªã„ã€‚
 	glOrtho( 0, DISPLAY_WIDTH, DISPLAY_HEIGHT, 0, -1, 1 );
 }
 
@@ -29,15 +29,15 @@ void terminate() {
 void display() {
 	glClear( GL_COLOR_BUFFER_BIT );
 
-	// •`‰æFRGBA‚ğfloat‚Åİ’è
+	// æç”»è‰²RGBAã‚’floatã§è¨­å®š
 	glColor4f( 1.0f, 0.0f, 0.0f, 1.0f );
-	// “_‚ÌƒTƒCƒY‚ğİ’è
+	// ç‚¹ã®ã‚µã‚¤ã‚ºã‚’è¨­å®š
 	glPointSize( 1.0f );
-	// }Œ`‚Ì•`‰æ‚ğŠJn‚·‚é
+	// å›³å½¢ã®æç”»ã‚’é–‹å§‹ã™ã‚‹
 	glBegin( GL_POINTS );
-	// ’¸“_XY‚ğ®”Œ^‚Åİ’è
+	// é ‚ç‚¹XYã‚’æ•´æ•°å‹ã§è¨­å®š
 	glVertex2i( 100, 100 );
-	// }Œ`•`‰æ‚ÌI—¹
+	// å›³å½¢æç”»ã®çµ‚äº†
 	glEnd();
 
 	glColor4f( 0.0f, 1.0f, 1.0f, 1.0f );
@@ -56,9 +56,9 @@ int main( int argc, char *argv[] ) {
 	glutInitDisplayMode( GLUT_RGBA );
 	glutCreateWindow( "Hello OpenGL!!" );
 	glutDisplayFunc( display );
-	initialize();// ‰Šú‰»ˆ—
+	initialize();// åˆæœŸåŒ–å‡¦ç†
 	glutMainLoop();
-	terminate();// I—¹ˆ—
+	terminate();// çµ‚äº†å‡¦ç†
 	return 0;
 }
 

@@ -1,4 +1,4 @@
-/**
+ï»¿/**
  * Referenced :
  * http://www21.atwiki.jp/opengl/pages/17.html
  */
@@ -6,24 +6,24 @@
 #include <freegl/glut.h>
 
 void display() {
-	// ƒJƒ‰[ƒoƒbƒtƒ@‚ÌƒNƒŠƒAF‚ðŽw’è
+	// ã‚«ãƒ©ãƒ¼ãƒãƒƒãƒ•ã‚¡ã®ã‚¯ãƒªã‚¢è‰²ã‚’æŒ‡å®š
 	glClearColor( 0.0f, 0.0f, 1.0f, 1.0f );
-	// ƒJƒ‰[ƒoƒbƒtƒ@‚ðƒNƒŠƒA‚·‚é
+	// ã‚«ãƒ©ãƒ¼ãƒãƒƒãƒ•ã‚¡ã‚’ã‚¯ãƒªã‚¢ã™ã‚‹
 	glClear( GL_COLOR_BUFFER_BIT );
-	// ‚±‚±‚Ü‚Å‚Ì•`‰æƒRƒ}ƒ“ƒh‚ðŽÀs
+	// ã“ã“ã¾ã§ã®æç”»ã‚³ãƒžãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 	glFlush();
 }
 
 int main( int argc, char *argv[] ) {
-	// GLUT‚ð‰Šú‰»
+	// GLUTã‚’åˆæœŸåŒ–
 	glutInit( &argc, argv );
-	// ƒfƒBƒXƒvƒŒƒCƒ‚[ƒh‚ÌÝ’èBŽw’è‚µ‚È‚­‚Ä‚à‚¢‚¢‚ªAGLUT_RGBA‚ªƒfƒtƒHƒ‹ƒg‚É‚È‚éB
+	// ãƒ‡ã‚£ã‚¹ãƒ—ãƒ¬ã‚¤ãƒ¢ãƒ¼ãƒ‰ã®è¨­å®šã€‚æŒ‡å®šã—ãªãã¦ã‚‚ã„ã„ãŒã€GLUT_RGBAãŒãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã«ãªã‚‹ã€‚
 	glutInitDisplayMode( GLUT_RGBA );
-	// ƒEƒBƒ“ƒhƒE‚ð¶¬
+	// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’ç”Ÿæˆ
 	glutCreateWindow( "Hello OpenGL!!" );
-	// ƒfƒBƒXƒvƒŒƒCƒR[ƒ‹ƒoƒbƒNŠÖ”‚Ì“o˜^
+	// ãƒ‡ã‚£ã‚¹ãƒ—ãƒ¬ã‚¤ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯é–¢æ•°ã®ç™»éŒ²
 	glutDisplayFunc( display );
-	// ƒCƒxƒ“ƒgˆ—‚ðŠJŽn
+	// ã‚¤ãƒ™ãƒ³ãƒˆå‡¦ç†ã‚’é–‹å§‹
 	glutMainLoop();
 	return 0;
 }

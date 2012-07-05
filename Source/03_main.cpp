@@ -1,4 +1,4 @@
-/**
+ï»¿/**
  * Referenced :
  * http://www21.atwiki.jp/opengl/pages/21.html
  */
@@ -23,7 +23,7 @@ void display() {
 	glClear( GL_COLOR_BUFFER_BIT );
 
 	glColor4f( 1.0f, 0.0f, 0.0f, 1.0f );
-	// ü‚Ì‘¾‚³‚ğİ’è
+	// ç·šã®å¤ªã•ã‚’è¨­å®š
 	glLineWidth( 1.0f );
 	glBegin( GL_LINES );
 	glVertex2i( 100, 100 );
