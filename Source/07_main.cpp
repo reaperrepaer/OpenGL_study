@@ -8,6 +8,8 @@
 #include <cstdint>
 #include <freegl/glut.h>
 
+#include "TestLib.h"
+
 using namespace std;
 
 namespace {
@@ -41,24 +43,21 @@ namespace {
 		~FontDrawer() {
 		}
 
-		void DrawStringW( int x, int y, wchar_t* format, ... ) {
-			wchar_t buf[256];
-			va_list ap;
-			int Length=0;
-			int list=0;
- 
+		void drawStringW( int x, int y, wchar_t* format, ... ) {
 			// ポインタがNULLの場合は終了
 			if ( format == NULL ) {
 				return;
 			}
 
 			// 文字列変換
+			wchar_t buf[ 256 ];
+			va_list ap;
 			va_start( ap, format );
 			vswprintf_s( buf, format, ap );
 			va_end( ap );
 
-			Length = wcslen( buf );
-			list = glGenLists( Length );
+			int Length = wcslen( buf );
+			int list = glGenLists( Length );
 			for( int i=0; i<Length; ++i ) {
 				wglUseFontBitmapsW( deviceContext_, buf[i], 1, list + (DWORD)i );
 			}
@@ -81,11 +80,15 @@ namespace {
 		HFONT	fontHandle_;
 	};
 
+	shared_ptr<FontDrawer> fontDrawer;
+
 }// unnamed namespace
 
 void initialize() {
 	glClearColor( 1.0f, 1.0f, 1.0f, 1.0f );
 	glOrtho( 0, DISPLAY_WIDTH, DISPLAY_HEIGHT, 0, -1, 1 );
+
+	fontDrawer = shared_ptr<FontDrawer>( new FontDrawer( L"ＭＳ明朝", 24 ) );
 }
 
 void terminate() {
@@ -94,6 +97,9 @@ void terminate() {
 void display() {
 	glClear( GL_COLOR_BUFFER_BIT );
 
+	glColor4f( 0.0f, 0.0f, 1.0f, 1.0f );
+	fontDrawer->drawStringW( 10, 120, L"あいうえお" );
+	fontDrawer->drawStringW( 10, 150, L"aiueo" );
 
 	glutSwapBuffers();
 }
