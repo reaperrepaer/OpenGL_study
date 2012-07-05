@@ -3,8 +3,8 @@
 #include <freegl/glut.h>
 
 namespace {
-	const int32_t DISPLAY_WIDTH = 320;
-	const int32_t DISPLAY_HEIGHT = 240;
+	const int DISPLAY_WIDTH = 320;
+	const int DISPLAY_HEIGHT = 240;
 }// namespace anonymous
 
 void display() {
