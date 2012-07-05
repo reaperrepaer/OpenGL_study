@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_点の描画", "Project\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_線の描画", "Project\03_線の描画.vcxproj", "{E1824639-CE43-45BD-934F-E9AC35C7CA87}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_四角形の描画", "Project\04_四角形の描画.vcxproj", "{4EBFD1D1-7A2A-44F4-8DCD-3E31AB2EA1A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -43,6 +45,10 @@ Global
 		{E1824639-CE43-45BD-934F-E9AC35C7CA87}.Debug|Win32.Build.0 = Debug|Win32
 		{E1824639-CE43-45BD-934F-E9AC35C7CA87}.Release|Win32.ActiveCfg = Release|Win32
 		{E1824639-CE43-45BD-934F-E9AC35C7CA87}.Release|Win32.Build.0 = Release|Win32
+		{4EBFD1D1-7A2A-44F4-8DCD-3E31AB2EA1A6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4EBFD1D1-7A2A-44F4-8DCD-3E31AB2EA1A6}.Debug|Win32.Build.0 = Debug|Win32
+		{4EBFD1D1-7A2A-44F4-8DCD-3E31AB2EA1A6}.Release|Win32.ActiveCfg = Release|Win32
+		{4EBFD1D1-7A2A-44F4-8DCD-3E31AB2EA1A6}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
