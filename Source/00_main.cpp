@@ -3,7 +3,7 @@
 
 void display() {
 	// カラーバッファのクリア色を指定
-	glClearColor( 0.0, 0.0, 1.0, 1.0 );
+	glClearColor( 0.0f, 0.0f, 1.0f, 1.0f );
 	// カラーバッファをクリアする
 	glClear( GL_COLOR_BUFFER_BIT );
 	// ここまでの描画コマンドを実行
