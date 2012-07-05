@@ -11,6 +11,7 @@ int main( int argc, char *argv[] ) {
 	glutInitWindowPosition( 100, 100 );
 	glutInitWindowSize( 320, 240 );
 	glutInit( &argc, argv );
+	glutInitDisplayMode( GLUT_RGBA );
 	glutCreateWindow( "Hello OpenGL!!" );
 	glutDisplayFunc( display );
 	glutMainLoop();
