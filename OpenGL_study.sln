@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08_板ポリゴンの描画
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09_2Dと3D描画の切り替え", "Project\09_2Dと3D描画の切り替え.vcxproj", "{71396332-19D9-4480-AB47-1ACB9519CE27}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_3Dシーンの設定と立方体の表示", "Project\10_3Dシーンの設定と立方体の表示.vcxproj", "{6ACAD109-5FF2-4867-99B3-611BFE32AEEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -79,6 +81,10 @@ Global
 		{71396332-19D9-4480-AB47-1ACB9519CE27}.Debug|Win32.Build.0 = Debug|Win32
 		{71396332-19D9-4480-AB47-1ACB9519CE27}.Release|Win32.ActiveCfg = Release|Win32
 		{71396332-19D9-4480-AB47-1ACB9519CE27}.Release|Win32.Build.0 = Release|Win32
+		{6ACAD109-5FF2-4867-99B3-611BFE32AEEA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6ACAD109-5FF2-4867-99B3-611BFE32AEEA}.Debug|Win32.Build.0 = Debug|Win32
+		{6ACAD109-5FF2-4867-99B3-611BFE32AEEA}.Release|Win32.ActiveCfg = Release|Win32
+		{6ACAD109-5FF2-4867-99B3-611BFE32AEEA}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
