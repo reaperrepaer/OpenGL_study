@@ -1,6 +1,6 @@
 ﻿/**
  * Referenced :
- * http://www21.atwiki.jp/opengl/pages/28.html
+ * http://www21.atwiki.jp/opengl/pages/29.html
  */
 #pragma comment(linker, "/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
 
