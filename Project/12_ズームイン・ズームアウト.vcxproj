@@ -11,13 +11,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\11_main.cpp" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\12_main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4B50CFFF-B679-44B4-931D-AE18B24F51B5}</ProjectGuid>
+    <ProjectGuid>{644AE418-B43A-41A3-AEEC-C3070B5CFE0E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My11_デプステスト</RootNamespace>
-    <ProjectName>11_デプステスト</ProjectName>
+    <RootNamespace>My12_ズームイン・ズームアウト</RootNamespace>
+    <ProjectName>12_ズームイン・ズームアウト</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
