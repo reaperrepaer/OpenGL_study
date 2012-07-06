@@ -31,7 +31,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09_2Dと3D描画の切り�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_3Dシーンの設定と立方体の表示", "Project\10_3Dシーンの設定と立方体の表示.vcxproj", "{6ACAD109-5FF2-4867-99B3-611BFE32AEEA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11_デプスバッファ", "Project\11_デプスバッファ.vcxproj", "{4B50CFFF-B679-44B4-931D-AE18B24F51B5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11_デプステスト", "Project\11_デプステスト.vcxproj", "{4B50CFFF-B679-44B4-931D-AE18B24F51B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
