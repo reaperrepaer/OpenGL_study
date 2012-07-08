@@ -23,7 +23,6 @@ namespace {
 	const int DISPLAY_WIDTH = 320;
 	const int DISPLAY_HEIGHT = 240;
 
-	float angle = 0.0f;
 	GLfloat aqua[] = { 0.0f, 0.0f, 1.0f, 1.0f };
 	GLfloat lightpos[] = { 200.0f, 1000.0f, -500.0f, 1.0f };
 
