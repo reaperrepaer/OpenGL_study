@@ -24,7 +24,7 @@ namespace {
 	// 自力といってもコピペ
 	// 頭に３角ポリゴンで作った円を置いて、
 	// 側面は４角形ポリゴンで塞ぐだけ。
-	void renderCylinder( float radius, float height, int sides ) {
+	void drawCylinder( float radius, float height, int sides ) {
 		double pi = 3.1415;
 		// 上面
 		glNormal3d( 0.0, 1.0, 0.0 );// 法線を上向きに設定
@@ -89,7 +89,7 @@ void display() {
 	
 	// 回転
 	glRotatef( angleX, 1.0f, 0.0f, 0.0f );
-	renderCylinder( 30.0f, 50.0f, 10 );
+	drawCylinder( 30.0f, 50.0f, 10 );
 
 	glutSwapBuffers();
 }

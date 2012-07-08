@@ -20,8 +20,8 @@ namespace {
 	GLfloat pink[] = { 1.0f, 0.5f, 0.5f, 1.0f };
 	GLfloat lightpos[] = { 200.0f, 1000.0f, -500.0f, 1.0f };
 
-	//直方体
-	void renderCuboid( float width, float height, float depth ) {
+	// 直方体
+	void drawCuboid( float width, float height, float depth ) {
 		glBegin( GL_QUADS );
 		// 前
 		glNormal3f( 0.0f, 0.0f, -1.0f );
@@ -100,7 +100,7 @@ void display() {
 	
 	// 回転
 	glRotatef( angle, 1.0f, 0.5f, 0.0f );
-	renderCuboid( 50.0f, 100.0f, 30 );
+	drawCuboid( 50.0f, 100.0f, 30 );
 
 	glutSwapBuffers();
 }
