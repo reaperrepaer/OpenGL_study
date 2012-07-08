@@ -45,6 +45,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "16_直方体を自力で描
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "17_指定座標で円運動", "Project\17_指定座標で円運動.vcxproj", "{18000145-9FF3-4BE9-AFD8-B41CD338D483}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "18_フラットシェーディング", "Project\18_フラットシェーディング.vcxproj", "{3E3918E2-CD2F-493B-BC6E-A4D50D634B48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -127,6 +129,10 @@ Global
 		{18000145-9FF3-4BE9-AFD8-B41CD338D483}.Debug|Win32.Build.0 = Debug|Win32
 		{18000145-9FF3-4BE9-AFD8-B41CD338D483}.Release|Win32.ActiveCfg = Release|Win32
 		{18000145-9FF3-4BE9-AFD8-B41CD338D483}.Release|Win32.Build.0 = Release|Win32
+		{3E3918E2-CD2F-493B-BC6E-A4D50D634B48}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3E3918E2-CD2F-493B-BC6E-A4D50D634B48}.Debug|Win32.Build.0 = Debug|Win32
+		{3E3918E2-CD2F-493B-BC6E-A4D50D634B48}.Release|Win32.ActiveCfg = Release|Win32
+		{3E3918E2-CD2F-493B-BC6E-A4D50D634B48}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
