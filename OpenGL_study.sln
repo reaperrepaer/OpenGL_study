@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "14_円錐の描画と拡大
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "15_円柱を自力で描画", "Project\15_円柱を自力で描画.vcxproj", "{C096ECEF-7735-47F9-A6B8-8EDCD17B7F80}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "16_直方体を自力で描画", "Project\16_直方体を自力で描画.vcxproj", "{C04D6A85-ED93-4EEA-9E56-A62508536212}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -115,6 +117,10 @@ Global
 		{C096ECEF-7735-47F9-A6B8-8EDCD17B7F80}.Debug|Win32.Build.0 = Debug|Win32
 		{C096ECEF-7735-47F9-A6B8-8EDCD17B7F80}.Release|Win32.ActiveCfg = Release|Win32
 		{C096ECEF-7735-47F9-A6B8-8EDCD17B7F80}.Release|Win32.Build.0 = Release|Win32
+		{C04D6A85-ED93-4EEA-9E56-A62508536212}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C04D6A85-ED93-4EEA-9E56-A62508536212}.Debug|Win32.Build.0 = Debug|Win32
+		{C04D6A85-ED93-4EEA-9E56-A62508536212}.Release|Win32.ActiveCfg = Release|Win32
+		{C04D6A85-ED93-4EEA-9E56-A62508536212}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
