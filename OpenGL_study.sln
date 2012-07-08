@@ -35,6 +35,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11_デプステスト", "Pr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12_ズームイン・ズームアウト", "Project\12_ズームイン・ズームアウト.vcxproj", "{644AE418-B43A-41A3-AEEC-C3070B5CFE0E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "13_トーラス(円環)の描画", "Project\13_トーラス(円環)の描画.vcxproj", "{31A3AD00-E06C-485F-ADBC-7420F451CB42}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "14_円錐の描画と拡大縮小", "Project\14_円錐の描画と拡大縮小.vcxproj", "{627E65B5-5E2D-43D0-9140-19CEEEED4B36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -97,6 +101,14 @@ Global
 		{644AE418-B43A-41A3-AEEC-C3070B5CFE0E}.Debug|Win32.Build.0 = Debug|Win32
 		{644AE418-B43A-41A3-AEEC-C3070B5CFE0E}.Release|Win32.ActiveCfg = Release|Win32
 		{644AE418-B43A-41A3-AEEC-C3070B5CFE0E}.Release|Win32.Build.0 = Release|Win32
+		{31A3AD00-E06C-485F-ADBC-7420F451CB42}.Debug|Win32.ActiveCfg = Debug|Win32
+		{31A3AD00-E06C-485F-ADBC-7420F451CB42}.Debug|Win32.Build.0 = Debug|Win32
+		{31A3AD00-E06C-485F-ADBC-7420F451CB42}.Release|Win32.ActiveCfg = Release|Win32
+		{31A3AD00-E06C-485F-ADBC-7420F451CB42}.Release|Win32.Build.0 = Release|Win32
+		{627E65B5-5E2D-43D0-9140-19CEEEED4B36}.Debug|Win32.ActiveCfg = Debug|Win32
+		{627E65B5-5E2D-43D0-9140-19CEEEED4B36}.Debug|Win32.Build.0 = Debug|Win32
+		{627E65B5-5E2D-43D0-9140-19CEEEED4B36}.Release|Win32.ActiveCfg = Release|Win32
+		{627E65B5-5E2D-43D0-9140-19CEEEED4B36}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

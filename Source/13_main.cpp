@@ -1,6 +1,6 @@
 ﻿/**
  * Referenced :
- * http://www21.atwiki.jp/opengl/pages/99.html
+ * http://www21.atwiki.jp/opengl/pages/31.html
  */
 #pragma comment(linker, "/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
 
@@ -16,15 +16,7 @@ namespace {
 	const int DISPLAY_WIDTH = 320;
 	const int DISPLAY_HEIGHT = 240;
 
-	// 回転用
 	float angleX = 0.0f;
-	// ズームイン、ズームアウトを表現する視野角
-	float zoom = 50.0f;
-	// インかアウトか
-	bool flag = false;
-
-	GLfloat red[] = { 1.0f, 0.0f, 0.0f, 1.0f };
-	// オレンジ
 	GLfloat orange[] = { 1.0f, 0.6f, 0.0f, 1.0f };
 	GLfloat lightpos[] = { 200.0f, 150.0f, -500.0f, 1.0f };
 
@@ -32,7 +24,6 @@ namespace {
 
 void initialize() {
 	glClearColor( 0.3f, 0.3f, 0.3f, 1.0f );
-	// デプステストを有効化
 	glEnable( GL_DEPTH_TEST );
 	glEnable( GL_LIGHTING );
 	glEnable( GL_LIGHT0 );
@@ -47,7 +38,7 @@ void display() {
 
 	glMatrixMode( GL_PROJECTION );
 	glLoadIdentity();
-	gluPerspective( zoom, (double)DISPLAY_WIDTH / (double)DISPLAY_HEIGHT, 1.0f, 1000.0f );
+	gluPerspective( 30.0f, (double)DISPLAY_WIDTH / (double)DISPLAY_HEIGHT, 1.0f, 1000.0f );
 
 	glMatrixMode( GL_MODELVIEW );
 	glLoadIdentity();
@@ -59,36 +50,16 @@ void display() {
 
 	glLightfv( GL_LIGHT0, GL_POSITION, lightpos );
 
-	// 地面
 	glMaterialfv( GL_FRONT, GL_DIFFUSE, orange );
-	glBegin( GL_QUADS );
-	glVertex3i(  100, -30,  100 );
-	glVertex3i( -100, -30,  100 );
-	glVertex3i( -100, -30, -100 );
-	glVertex3i(  100, -30, -100 );
-	glEnd();
-
-	// キューブ
 	glRotatef( angleX, 1.0f, 0.0f, 0.0f );
-	glMaterialfv( GL_FRONT, GL_DIFFUSE, red );
-	glutSolidCube( 40.0f );
+	// トーラスを描画
+	glutSolidTorus( 20.0f, 40.0f, 16, 16 );
 
 	glutSwapBuffers();
 }
 
 void idle() {
-
 	angleX += 0.02f;
-	if ( flag ) {
-		zoom += 0.02f;
-	}
-	else {
-		zoom -= 0.02f;
-	}
-
-	if ( zoom < 15.0f ) flag = true;
-	if ( zoom > 50.0f ) flag = false;
-
 	glutPostRedisplay();
 }
 
