@@ -11,13 +11,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\20_main.cpp" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\19_main .cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8543268C-238B-46BF-BEA7-AB4D039F68DB}</ProjectGuid>
+    <ProjectGuid>{631BFC30-91C6-470B-95F7-1CE69E49C2E7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My20_スムースシェーディング</RootNamespace>
-    <ProjectName>20_スムースシェーディング</ProjectName>
+    <RootNamespace>My19_ワイヤーフレーム表示</RootNamespace>
+    <ProjectName>19_ワイヤーフレーム表示</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

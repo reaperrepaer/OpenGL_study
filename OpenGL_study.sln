@@ -47,9 +47,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "17_指定座標で円運動
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "18_フラットシェーディング", "Project\18_フラットシェーディング.vcxproj", "{3E3918E2-CD2F-493B-BC6E-A4D50D634B48}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "19_ワイヤーフレーム表示", "Project\19_ワイヤーフレーム表示.vcxproj", "{631BFC30-91C6-470B-95F7-1CE69E49C2E7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20_スムースシェーディング", "Project\20_スムースシェーディング.vcxproj", "{8543268C-238B-46BF-BEA7-AB4D039F68DB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20_スムースシェーディング示", "Project\20_スムースシェーディング.vcxproj", "{8543268C-238B-46BF-BEA7-AB4D039F68DB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "21_マテリアルの設定", "Project\21_マテリアルの設定.vcxproj", "{6D14995C-A55B-4071-A35E-B2285DDD95B7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "19_ワイヤーフレーム表示", "Project\19_ワイヤーフレーム表示.vcxproj", "{631BFC30-91C6-470B-95F7-1CE69E49C2E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -137,14 +139,18 @@ Global
 		{3E3918E2-CD2F-493B-BC6E-A4D50D634B48}.Debug|Win32.Build.0 = Debug|Win32
 		{3E3918E2-CD2F-493B-BC6E-A4D50D634B48}.Release|Win32.ActiveCfg = Release|Win32
 		{3E3918E2-CD2F-493B-BC6E-A4D50D634B48}.Release|Win32.Build.0 = Release|Win32
-		{631BFC30-91C6-470B-95F7-1CE69E49C2E7}.Debug|Win32.ActiveCfg = Debug|Win32
-		{631BFC30-91C6-470B-95F7-1CE69E49C2E7}.Debug|Win32.Build.0 = Debug|Win32
-		{631BFC30-91C6-470B-95F7-1CE69E49C2E7}.Release|Win32.ActiveCfg = Release|Win32
-		{631BFC30-91C6-470B-95F7-1CE69E49C2E7}.Release|Win32.Build.0 = Release|Win32
 		{8543268C-238B-46BF-BEA7-AB4D039F68DB}.Debug|Win32.ActiveCfg = Debug|Win32
 		{8543268C-238B-46BF-BEA7-AB4D039F68DB}.Debug|Win32.Build.0 = Debug|Win32
 		{8543268C-238B-46BF-BEA7-AB4D039F68DB}.Release|Win32.ActiveCfg = Release|Win32
 		{8543268C-238B-46BF-BEA7-AB4D039F68DB}.Release|Win32.Build.0 = Release|Win32
+		{6D14995C-A55B-4071-A35E-B2285DDD95B7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6D14995C-A55B-4071-A35E-B2285DDD95B7}.Debug|Win32.Build.0 = Debug|Win32
+		{6D14995C-A55B-4071-A35E-B2285DDD95B7}.Release|Win32.ActiveCfg = Release|Win32
+		{6D14995C-A55B-4071-A35E-B2285DDD95B7}.Release|Win32.Build.0 = Release|Win32
+		{631BFC30-91C6-470B-95F7-1CE69E49C2E7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{631BFC30-91C6-470B-95F7-1CE69E49C2E7}.Debug|Win32.Build.0 = Debug|Win32
+		{631BFC30-91C6-470B-95F7-1CE69E49C2E7}.Release|Win32.ActiveCfg = Release|Win32
+		{631BFC30-91C6-470B-95F7-1CE69E49C2E7}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
