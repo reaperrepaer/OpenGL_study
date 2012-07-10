@@ -1,6 +1,8 @@
 ﻿/**
  * Referenced :
- * http://www21.atwiki.jp/opengl/pages/73.html
+ * http://www21.atwiki.jp/opengl/pages/57.html
+ * テクスチャ座標について
+ * http://www.c3.club.kyutech.ac.jp/gamewiki/index.php?%A5%C6%A5%AF%A5%B9%A5%C1%A5%E3%BA%C2%C9%B8
  */
 #pragma comment(linker, "/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
 
@@ -20,6 +22,9 @@ namespace {
 
 	GLfloat lightpos[] = { 200.0f, 1000.0f, -500.0f, 1.0f };
 
+	pngInfo info;
+	GLuint texture;
+
 }// unnamed namespace
 
 void initialize() {
@@ -28,10 +33,18 @@ void initialize() {
 	glEnable( GL_LIGHTING );
 	glEnable( GL_LIGHT0 );
 
-	// カラーマテリアルを両面のディフェーズカラーに設定する。
-	glColorMaterial( GL_FRONT_AND_BACK, GL_DIFFUSE );
-	// マテリアルカラーを有効に。
-	glEnable( GL_COLOR_MATERIAL );
+	glOrtho( 0, DISPLAY_WIDTH, DISPLAY_HEIGHT, 0, -1, 1 );
+	
+	// テクスチャを作る
+	texture = pngBind (
+				"sample.png",
+				PNG_NOMIPMAP,
+				PNG_ALPHA,
+				&info,
+				GL_CLAMP,
+				GL_NEAREST,
+				GL_NEAREST
+				);
 }
 
 void terminate() {
@@ -39,37 +52,36 @@ void terminate() {
 
 void display() {
 	glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
-	glViewport( 0, 0, DISPLAY_WIDTH, DISPLAY_HEIGHT );
-
-	glMatrixMode( GL_PROJECTION );
-	glLoadIdentity();
-	gluPerspective( 30.0f, (double)DISPLAY_WIDTH / (double)DISPLAY_HEIGHT, 1.0f, 1000.0f );
 
 	glMatrixMode( GL_MODELVIEW );
-    glLoadIdentity();
+	glLoadIdentity();
 
-	gluLookAt(
-		150.0f, 100.0f, -200.0f,
-		0.0f, 0.0f, 0.0,
-		0.0f, 1.0f, 0.0f
-		);
+	// 久しぶりに正射影
+	glOrtho( 0.0, DISPLAY_WIDTH, DISPLAY_HEIGHT, 0.0, -1.0, 1.0 );
 
-	// ライトの設定
-	glLightfv( GL_LIGHT0, GL_POSITION, lightpos );
+	glEnable( GL_TEXTURE_2D );// テクスチャ有効
+	glEnable( GL_ALPHA_TEST );// アルファテスト開始
 
-	glutSolidTorus( 20.0f, 40.0f, 16, 16 );
+	glBegin( GL_POLYGON );
+
+	// 頂点の設定
+	glVertex2d(  10, 230 );// 左下
+	glVertex2d(  10,  10 );// 左上
+	glVertex2d( 310,  10 );// 右上
+	glVertex2d( 310, 230 );// 右下
+
+	// テクスチャ座標を設定
+	glTexCoord2f( 0.0f, 1.0f );
+	glTexCoord2f( 0.0f, 0.0f );
+	glTexCoord2f( 1.0f, 0.0f );
+	glTexCoord2f( 1.0f, 1.0f );
+
+	glEnd();
+
+	glDisable( GL_ALPHA_TEST );// アルファテスト終了
+	glDisable( GL_TEXTURE_2D );// テクスチャ無効
 
 	glutSwapBuffers();
-}
-
-void timer( int value ) {
-	// カラーを指定する
-	glColor3f(
-		(GLfloat)(rand()%100)/100,
-		(GLfloat)(rand()%100)/100,
-		(GLfloat)(rand()%100)/100
-		);
-	glutTimerFunc( 200, timer, 0 );// もう一回
 }
 
 void idle() {
@@ -83,8 +95,6 @@ int main( int argc, char *argv[] ) {
 	glutInitDisplayMode( GLUT_RGBA | GLUT_DOUBLE );
 	glutCreateWindow( "Hello OpenGL!!" );
 	glutDisplayFunc( display );
-	// 一定時間が経過でイベントを発生させるコールバック関数を設定
-	glutTimerFunc( 200, timer, 0 );
 	glutIdleFunc( idle );
 
 	initialize();
