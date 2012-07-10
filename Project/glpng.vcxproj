@@ -12,6 +12,39 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\glpng.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\png\png.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\png\pngerror.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\png\pngget.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\png\pngmem.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\png\pngpread.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\png\pngread.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\png\pngrio.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\png\pngrtran.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\png\pngrutil.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\png\pngset.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\png\pngtrans.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\adler32.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\crc32.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\infblock.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\infcodes.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\inffast.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\inflate.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\inftrees.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\infutil.c" />
+    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\png\png.h" />
+    <ClInclude Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\png\pngconf.h" />
+    <ClInclude Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\infblock.h" />
+    <ClInclude Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\infcodes.h" />
+    <ClInclude Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\inffast.h" />
+    <ClInclude Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\inffixed.h" />
+    <ClInclude Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\inftrees.h" />
+    <ClInclude Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\infutil.h" />
+    <ClInclude Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\zconf.h" />
+    <ClInclude Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\zlib.h" />
+    <ClInclude Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\glpng\zlib\zutil.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{197ACF84-768C-4A51-BD63-2EAC5743D7C3}</ProjectGuid>

@@ -1,8 +1,6 @@
 ﻿/**
  * Referenced :
  * http://www21.atwiki.jp/opengl/pages/57.html
- * テクスチャ座標について
- * http://www.c3.club.kyutech.ac.jp/gamewiki/index.php?%A5%C6%A5%AF%A5%B9%A5%C1%A5%E3%BA%C2%C9%B8
  */
 #pragma comment(linker, "/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
 
