@@ -17,6 +17,9 @@ freeglut-2.8.0
 http://freeglut.sourceforge.net/
 install -> http://pokotsun.mydns.jp/?p=2100
 
+glpng-1.45
+http://openports.se/graphics/glpng
+
 Boost C++ Libraries：
 Release 1.47.0
 http://www.boost.org/
