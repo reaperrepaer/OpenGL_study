@@ -46,14 +46,14 @@
     <OutDir>$(SolutionDir)app\</OutDir>
     <IntDir>$(SolutionDir)obj\$(Configuration)\</IntDir>
     <IncludePath>$(BOOST_ROOT);$(SolutionDir)include\;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)lib\;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(BOOST_ROOT)\lib;$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)app\</OutDir>
     <IntDir>$(SolutionDir)obj\$(Configuration)\</IntDir>
     <IncludePath>$(BOOST_ROOT);$(SolutionDir)include\;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)lib\;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(BOOST_ROOT)\lib;$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
