@@ -63,6 +63,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "23_glpngで画像を描画"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glpng", "Project\glpng.vcxproj", "{197ACF84-768C-4A51-BD63-2EAC5743D7C3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "24_テクスチャマトリクス", "Project\24_テクスチャマトリクス.vcxproj", "{FBE6FF0E-BD00-4F45-B753-D332D4917667}"
+	ProjectSection(ProjectDependencies) = postProject
+		{518F7AE6-8157-43B1-8434-BF965ABBE00F} = {518F7AE6-8157-43B1-8434-BF965ABBE00F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lodepng", "Project\lodepng.vcxproj", "{518F7AE6-8157-43B1-8434-BF965ABBE00F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -173,6 +180,14 @@ Global
 		{197ACF84-768C-4A51-BD63-2EAC5743D7C3}.Debug|Win32.Build.0 = Debug|Win32
 		{197ACF84-768C-4A51-BD63-2EAC5743D7C3}.Release|Win32.ActiveCfg = Release|Win32
 		{197ACF84-768C-4A51-BD63-2EAC5743D7C3}.Release|Win32.Build.0 = Release|Win32
+		{FBE6FF0E-BD00-4F45-B753-D332D4917667}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FBE6FF0E-BD00-4F45-B753-D332D4917667}.Debug|Win32.Build.0 = Debug|Win32
+		{FBE6FF0E-BD00-4F45-B753-D332D4917667}.Release|Win32.ActiveCfg = Release|Win32
+		{FBE6FF0E-BD00-4F45-B753-D332D4917667}.Release|Win32.Build.0 = Release|Win32
+		{518F7AE6-8157-43B1-8434-BF965ABBE00F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{518F7AE6-8157-43B1-8434-BF965ABBE00F}.Debug|Win32.Build.0 = Debug|Win32
+		{518F7AE6-8157-43B1-8434-BF965ABBE00F}.Release|Win32.ActiveCfg = Release|Win32
+		{518F7AE6-8157-43B1-8434-BF965ABBE00F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
