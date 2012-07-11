@@ -23,7 +23,11 @@ install -> http://wiki.livedoor.jp/mikk_ni3_92/d/png%B7%C1%BC%B0%A4%CE%B2%E8%C1%
 
 Boost C++ Libraries：
 Release 1.47.0
+・system.lib
+・filesystem.lib
 http://www.boost.org/
+install -> http://www.kmonos.net/alang/boost/install.html
+install(Win) -> http://www.boostpro.com/download/
 
 
 ◆Contact
