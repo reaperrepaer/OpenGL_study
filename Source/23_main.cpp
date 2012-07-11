@@ -144,7 +144,8 @@ void Init(){
  namespace fs = boost::filesystem;  
  fs::path image_path = fs::current_path() / "data/image.png";
 
- texture = pngBind("C:/st@workspace/GitHub/OpenGL_study/app/image.png", PNG_NOMIPMAP, PNG_ALPHA, &info, GL_CLAMP, GL_NEAREST, GL_NEAREST);
+ std::string str = image_path.string();
+ texture = pngBind( str.c_str(), PNG_NOMIPMAP, PNG_ALPHA, &info, GL_CLAMP, GL_NEAREST, GL_NEAREST);
 }
 int main(int argc, char *argv[])
 {
