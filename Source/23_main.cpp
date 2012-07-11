@@ -1,6 +1,9 @@
 ﻿/**
  * Referenced :
  * http://www21.atwiki.jp/opengl/pages/57.html
+ * boost::filesystem
+ * http://hwada.hatenablog.com/entry/20110611/1307781684
+ * http://d.hatena.ne.jp/osyo-manga/20100924/1285277564
  */
 #pragma comment(linker, "/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
 
@@ -9,10 +12,13 @@
 #include <freegl/glut.h>
 // glpngを使う
 #include <gl/glpng.h>
+// boost::filesystemを使う
+#include <boost/filesystem/path.hpp>
+#include <boost/filesystem/operations.hpp>
 
 #include "TestLib.h"
 
-#if 0
+#if 1
 using namespace std;
 
 namespace {
@@ -28,15 +34,22 @@ namespace {
 
 void initialize() {
 	glClearColor( 0.3f, 0.3f, 0.3f, 1.0f );
+/*
 	glEnable( GL_DEPTH_TEST );
 	glEnable( GL_LIGHTING );
 	glEnable( GL_LIGHT0 );
-
+*/
 	glOrtho( 0, DISPLAY_WIDTH, DISPLAY_HEIGHT, 0, -1, 1 );
 	
+	// カレントディレクトリ取得
+	namespace fs = boost::filesystem;  
+	fs::path image_path = fs::current_path() / "data/image.png";
+
+	std::string str = image_path.string();
+
 	// テクスチャを作る
 	texture = pngBind (
-				"image.png",
+				str.c_str(),
 				PNG_NOMIPMAP,
 				PNG_ALPHA,
 				&info,
@@ -63,17 +76,21 @@ void display() {
 
 	glBegin( GL_POLYGON );
 
-	// 頂点の設定
-	glVertex2d(  10, 230 );// 左下
-	glVertex2d(  10,  10 );// 左上
-	glVertex2d( 310,  10 );// 右上
-	glVertex2d( 310, 230 );// 右下
-
-	// テクスチャ座標を設定
+	// 頂点座標とテクスチャ座標の設定
+	// これは順番に入れないといけないらしい。
+	// この辺は順番に追加されていくんだろうと思う。
+	// 左下
 	glTexCoord2f( 0.0f, 1.0f );
+	glVertex2d(  10, 230 );
+	// 左上
 	glTexCoord2f( 0.0f, 0.0f );
+	glVertex2d(  10,  10 );
+	// 右上
 	glTexCoord2f( 1.0f, 0.0f );
+	glVertex2d( 310,  10 );
+	// 右下
 	glTexCoord2f( 1.0f, 1.0f );
+	glVertex2d( 310, 230 );
 
 	glEnd();
 
@@ -101,7 +118,8 @@ int main( int argc, char *argv[] ) {
 	terminate();
 	return 0;
 }
-#endif
+
+#else
 
 #include <boost/filesystem/path.hpp>
 #include <boost/filesystem/operations.hpp>
@@ -160,3 +178,6 @@ int main(int argc, char *argv[])
  glutMainLoop();
  return 0;
 }
+
+#endif
+
