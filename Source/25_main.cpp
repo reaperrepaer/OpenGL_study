@@ -28,7 +28,6 @@ namespace {
 
 	// サイズ用構造体
 	struct Rect {
-		Rect
 		int x;
 		int y;
 		int width;
