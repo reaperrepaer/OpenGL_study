@@ -34,7 +34,7 @@ wglext.h
 http://www.opengl.org/registry/api/wglext.h
 install -> OpenGLのインストールディレクトリに追加
 
-####GLEW
+####GLEW1 1.7.0
 > プログラマブルシェーダGLSLを使うためのライブラリ
 http://glew.sourceforge.net/
 

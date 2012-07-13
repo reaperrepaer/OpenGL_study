@@ -30,7 +30,7 @@ namespace {
 	// テクスチャ。比較用に２つ。
 	GLuint textures[ 2 ] = { 0 };
 
-	void draw( float x,float y,float w,float h ) {
+	void draw( float x, float y, float w, float h ) {
 		glEnable( GL_ALPHA_TEST );// アルファテスト開始
 		glBegin( GL_POLYGON );
 		glTexCoord2f( 0.0f, 0.0f ); glVertex2f( x,  y );
