@@ -119,22 +119,23 @@ void display() {
 	glutSwapBuffers();
 }
 
-void timer( int value ) {
-	++filter_no;
-	if ( filter_no == 4 ) {
-		filter_no = 0;
-	}
+void keyEvent( unsigned char key, int x, int y ) {
+	// スペースキーが押されたら切り替え
+	if ( key == ' ' ) {
+		++filter_no;
+		if ( filter_no == 4 ) {
+			filter_no = 0;
+		}
 
-	windowTitle = "ミップマップ";
-	switch ( filter_no ) {
-		case 0: windowTitle += ":0　GL_NEAREST_MIPMAP_NEAREST"; break;
-		case 1: windowTitle += ":1　GL_LINEAR_MIPMAP_NEAREST "; break;
-		case 2: windowTitle += ":2　GL_NEAREST_MIPMAP_LINEAR "; break;
-		case 3: windowTitle += ":3　GL_LINEAR_MIPMAP_LINEAR  "; break;
+		windowTitle = "ミップマップ";
+		switch ( filter_no ) {
+			case 0: windowTitle += ":0　GL_NEAREST_MIPMAP_NEAREST"; break;
+			case 1: windowTitle += ":1　GL_LINEAR_MIPMAP_NEAREST "; break;
+			case 2: windowTitle += ":2　GL_NEAREST_MIPMAP_LINEAR "; break;
+			case 3: windowTitle += ":3　GL_LINEAR_MIPMAP_LINEAR  "; break;
+		}
+		glutSetWindowTitle( windowTitle.c_str() );
 	}
-
-	glutSetWindowTitle( windowTitle.c_str() );
-	glutTimerFunc( 1000, timer, 0 );
 }
 
 void idle() {
@@ -147,8 +148,9 @@ int main( int argc, char* argv[] ) {
 	glutInit( &argc, argv );
 	glutInitDisplayMode( GLUT_RGBA | GLUT_DOUBLE );
 	glutCreateWindow( "Hello OpenGL!!" );
+
 	glutDisplayFunc( display );
-	glutTimerFunc( 1000, timer, 0 );
+	glutKeyboardFunc( keyEvent );
 	glutIdleFunc( idle );
 
 	initialize();
