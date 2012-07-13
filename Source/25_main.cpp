@@ -1,6 +1,8 @@
 ﻿/**
  * Referenced :
  * http://www21.atwiki.jp/opengl/pages/58.html
+ * glTexParameteriについて
+ * http://www.komoto.org/opengl/sample08.html
  */
 #pragma comment(linker, "/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
 
@@ -86,8 +88,8 @@ void initialize() {
 	glGenTextures( 1, (GLuint*)&texture );
 
 	glBindTexture( GL_TEXTURE_2D, texture );
-	glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST );
-	glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST );
+	glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST );// 拡大されて表示されるときの設定
+	glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST );// 縮小されて表示されるときの設定
 	glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT );
 	glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT ); 
 
