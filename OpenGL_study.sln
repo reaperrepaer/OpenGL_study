@@ -79,6 +79,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "25_lodepngで画像を描�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "26_ミップマップ", "Project\26_ミップマップ.vcxproj", "{9C24F093-A1C3-4BC9-A0B8-5E98DB04EB78}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "27_ミップマップのテクスチャ補間フィルタ", "Project\27_ミップマップのテクスチャ補間フィルタ.vcxproj", "{39775020-1205-4972-9032-E8AD0ACE5C95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -205,6 +207,10 @@ Global
 		{9C24F093-A1C3-4BC9-A0B8-5E98DB04EB78}.Debug|Win32.Build.0 = Debug|Win32
 		{9C24F093-A1C3-4BC9-A0B8-5E98DB04EB78}.Release|Win32.ActiveCfg = Release|Win32
 		{9C24F093-A1C3-4BC9-A0B8-5E98DB04EB78}.Release|Win32.Build.0 = Release|Win32
+		{39775020-1205-4972-9032-E8AD0ACE5C95}.Debug|Win32.ActiveCfg = Debug|Win32
+		{39775020-1205-4972-9032-E8AD0ACE5C95}.Debug|Win32.Build.0 = Debug|Win32
+		{39775020-1205-4972-9032-E8AD0ACE5C95}.Release|Win32.ActiveCfg = Release|Win32
+		{39775020-1205-4972-9032-E8AD0ACE5C95}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

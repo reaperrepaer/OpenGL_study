@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\st%40workspace\GitHub\OpenGL_study\Source\13_main.cpp" />
+    <ClCompile Include="..\Source\13_main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{31A3AD00-E06C-485F-ADBC-7420F451CB42}</ProjectGuid>
