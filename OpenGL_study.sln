@@ -77,11 +77,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "25_lodepngで画像を描�
 		{518F7AE6-8157-43B1-8434-BF965ABBE00F} = {518F7AE6-8157-43B1-8434-BF965ABBE00F}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "26_ミップマップ", "Project\26_ミップマップ.vcxproj", "{9C24F093-A1C3-4BC9-A0B8-5E98DB04EB78}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "26_キーボードの入力", "Project\26_キーボードの入力.vcxproj", "{2F811CCC-B55E-4116-B0EA-E7D2185FD4E1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "27_ミップマップのテクスチャ補間フィルタ", "Project\27_ミップマップのテクスチャ補間フィルタ.vcxproj", "{39775020-1205-4972-9032-E8AD0ACE5C95}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "27_ミップマップ", "Project\27_ミップマップ.vcxproj", "{9C24F093-A1C3-4BC9-A0B8-5E98DB04EB78}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28_バイリニアフィルタリング", "Project\28_バイリニアフィルタリング.vcxproj", "{97284E0C-F55E-4D6A-BBB2-46840FA5334D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28_ミップマップのテクスチャ補間フィルタ", "Project\28_ミップマップのテクスチャ補間フィルタ.vcxproj", "{39775020-1205-4972-9032-E8AD0ACE5C95}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "29_バイリニアフィルタリング", "Project\29_バイリニアフィルタリング.vcxproj", "{97284E0C-F55E-4D6A-BBB2-46840FA5334D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -205,6 +207,10 @@ Global
 		{8A457A51-009D-40D1-98B3-50D742FF6480}.Debug|Win32.Build.0 = Debug|Win32
 		{8A457A51-009D-40D1-98B3-50D742FF6480}.Release|Win32.ActiveCfg = Release|Win32
 		{8A457A51-009D-40D1-98B3-50D742FF6480}.Release|Win32.Build.0 = Release|Win32
+		{2F811CCC-B55E-4116-B0EA-E7D2185FD4E1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2F811CCC-B55E-4116-B0EA-E7D2185FD4E1}.Debug|Win32.Build.0 = Debug|Win32
+		{2F811CCC-B55E-4116-B0EA-E7D2185FD4E1}.Release|Win32.ActiveCfg = Release|Win32
+		{2F811CCC-B55E-4116-B0EA-E7D2185FD4E1}.Release|Win32.Build.0 = Release|Win32
 		{9C24F093-A1C3-4BC9-A0B8-5E98DB04EB78}.Debug|Win32.ActiveCfg = Debug|Win32
 		{9C24F093-A1C3-4BC9-A0B8-5E98DB04EB78}.Debug|Win32.Build.0 = Debug|Win32
 		{9C24F093-A1C3-4BC9-A0B8-5E98DB04EB78}.Release|Win32.ActiveCfg = Release|Win32

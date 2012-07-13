@@ -11,13 +11,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Source\28_main.cpp" />
+    <ClCompile Include="..\Source\29_main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{97284E0C-F55E-4D6A-BBB2-46840FA5334D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My28_バイリニアフィルタリング</RootNamespace>
-    <ProjectName>28_バイリニアフィルタリング</ProjectName>
+    <RootNamespace>My29_バイリニアフィルタリング</RootNamespace>
+    <ProjectName>29_バイリニアフィルタリング</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

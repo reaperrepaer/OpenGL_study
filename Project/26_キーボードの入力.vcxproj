@@ -11,13 +11,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Source\27_main.cpp" />
+    <ClCompile Include="..\Source\26_main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{39775020-1205-4972-9032-E8AD0ACE5C95}</ProjectGuid>
+    <ProjectGuid>{2F811CCC-B55E-4116-B0EA-E7D2185FD4E1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My27_ミップマップのテクスチャ補間フィルタ</RootNamespace>
-    <ProjectName>27_ミップマップのテクスチャ補間フィルタ</ProjectName>
+    <RootNamespace>My26_キーボードの入力</RootNamespace>
+    <ProjectName>26_キーボードの入力</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
