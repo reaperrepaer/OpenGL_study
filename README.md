@@ -37,6 +37,7 @@ install -> OpenGLのインストールディレクトリに追加
 ####GLEW1 1.7.0
 > プログラマブルシェーダGLSLを使うためのライブラリ
 http://glew.sourceforge.net/
+[install](http://pokotsun.mydns.jp/?p=2365)
 
 ###Boost C++ Libraries：
 ####Release 1.47.0

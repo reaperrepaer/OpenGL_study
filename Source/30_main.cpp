@@ -31,6 +31,8 @@ namespace {
 
 }// unnamed namespace
 
+void keyEvent( unsigned char key, int x, int y );
+
 void initialize() {
 	glClearColor( 0.0f, 0.0f, 0.0f, 1.0f );
 	glOrtho( 0, DISPLAY_WIDTH, DISPLAY_HEIGHT, 0, -1, 1 );
@@ -59,13 +61,13 @@ void initialize() {
 	glEnable( GL_TEXTURE_2D );
 
 	// 最近傍法
-	glBindTexture( GL_TEXTURE_2D, texture );
 	glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR );
-	glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_LINEAR );
+	glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_LINEAR );
 	glBindTexture( GL_TEXTURE_2D, texture );
-	glTexImage2D( GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image );
+	gluBuild2DMipmaps( GL_TEXTURE_2D, GL_RGBA, width, height, GL_RGBA, GL_UNSIGNED_BYTE, image );
 
 	glDisable( GL_TEXTURE_2D );
+	keyEvent( ' ', 0, 0 );
 }
 /*
 void terminate() {
