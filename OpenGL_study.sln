@@ -230,6 +230,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "32_法線", "Project\32_法
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "33_陰面消去", "Project\33_陰面消去.vcxproj", "{1A91086F-C269-4A50-B309-23EB6379556B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "34_アルファブレンディング", "Project\34_アルファブレンディング.vcxproj", "{43B2EBA5-11C0-4845-B2A3-439847C71BB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug MX|Win32 = Debug MX|Win32
@@ -534,6 +536,14 @@ Global
 		{1A91086F-C269-4A50-B309-23EB6379556B}.Release MX|Win32.Build.0 = Release|Win32
 		{1A91086F-C269-4A50-B309-23EB6379556B}.Release|Win32.ActiveCfg = Release|Win32
 		{1A91086F-C269-4A50-B309-23EB6379556B}.Release|Win32.Build.0 = Release|Win32
+		{43B2EBA5-11C0-4845-B2A3-439847C71BB9}.Debug MX|Win32.ActiveCfg = Debug|Win32
+		{43B2EBA5-11C0-4845-B2A3-439847C71BB9}.Debug MX|Win32.Build.0 = Debug|Win32
+		{43B2EBA5-11C0-4845-B2A3-439847C71BB9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{43B2EBA5-11C0-4845-B2A3-439847C71BB9}.Debug|Win32.Build.0 = Debug|Win32
+		{43B2EBA5-11C0-4845-B2A3-439847C71BB9}.Release MX|Win32.ActiveCfg = Release|Win32
+		{43B2EBA5-11C0-4845-B2A3-439847C71BB9}.Release MX|Win32.Build.0 = Release|Win32
+		{43B2EBA5-11C0-4845-B2A3-439847C71BB9}.Release|Win32.ActiveCfg = Release|Win32
+		{43B2EBA5-11C0-4845-B2A3-439847C71BB9}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
