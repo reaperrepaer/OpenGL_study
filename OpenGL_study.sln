@@ -240,6 +240,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "37_アンチエイリアシ
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "38_ステンシルテスト", "Project\38_ステンシルテスト.vcxproj", "{09496466-FD57-4933-B720-3DCE03775228}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "39_鏡面反射", "Project\39_鏡面反射.vcxproj", "{254EF558-FCA0-4A39-AEA4-014CA1EC07A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug MX|Win32 = Debug MX|Win32
@@ -584,6 +586,14 @@ Global
 		{09496466-FD57-4933-B720-3DCE03775228}.Release MX|Win32.Build.0 = Release|Win32
 		{09496466-FD57-4933-B720-3DCE03775228}.Release|Win32.ActiveCfg = Release|Win32
 		{09496466-FD57-4933-B720-3DCE03775228}.Release|Win32.Build.0 = Release|Win32
+		{254EF558-FCA0-4A39-AEA4-014CA1EC07A6}.Debug MX|Win32.ActiveCfg = Debug|Win32
+		{254EF558-FCA0-4A39-AEA4-014CA1EC07A6}.Debug MX|Win32.Build.0 = Debug|Win32
+		{254EF558-FCA0-4A39-AEA4-014CA1EC07A6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{254EF558-FCA0-4A39-AEA4-014CA1EC07A6}.Debug|Win32.Build.0 = Debug|Win32
+		{254EF558-FCA0-4A39-AEA4-014CA1EC07A6}.Release MX|Win32.ActiveCfg = Release|Win32
+		{254EF558-FCA0-4A39-AEA4-014CA1EC07A6}.Release MX|Win32.Build.0 = Release|Win32
+		{254EF558-FCA0-4A39-AEA4-014CA1EC07A6}.Release|Win32.ActiveCfg = Release|Win32
+		{254EF558-FCA0-4A39-AEA4-014CA1EC07A6}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

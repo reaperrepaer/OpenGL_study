@@ -1,6 +1,6 @@
 ﻿/**
  * Referenced :
- * http://www21.atwiki.jp/opengl/pages/77.html
+ * http://www21.atwiki.jp/opengl/pages/97.html
  *
  * ステンシルバッファの値をみて、描画するかしないかを決めることができる。
  * 画面の切り抜き(クリッピング)とかができるようになる。
