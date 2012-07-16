@@ -226,6 +226,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "30_異方性フィルタリ
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "31_任意軸回転", "Project\31_任意軸回転.vcxproj", "{E55297F4-121E-4EE8-A6CE-A67275D9393C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "32_法線", "Project\32_法線.vcxproj", "{FF0F694E-5C6F-485C-B5BA-9D8CB91E24A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug MX|Win32 = Debug MX|Win32
@@ -514,6 +516,14 @@ Global
 		{E55297F4-121E-4EE8-A6CE-A67275D9393C}.Release MX|Win32.Build.0 = Release|Win32
 		{E55297F4-121E-4EE8-A6CE-A67275D9393C}.Release|Win32.ActiveCfg = Release|Win32
 		{E55297F4-121E-4EE8-A6CE-A67275D9393C}.Release|Win32.Build.0 = Release|Win32
+		{FF0F694E-5C6F-485C-B5BA-9D8CB91E24A2}.Debug MX|Win32.ActiveCfg = Debug|Win32
+		{FF0F694E-5C6F-485C-B5BA-9D8CB91E24A2}.Debug MX|Win32.Build.0 = Debug|Win32
+		{FF0F694E-5C6F-485C-B5BA-9D8CB91E24A2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FF0F694E-5C6F-485C-B5BA-9D8CB91E24A2}.Debug|Win32.Build.0 = Debug|Win32
+		{FF0F694E-5C6F-485C-B5BA-9D8CB91E24A2}.Release MX|Win32.ActiveCfg = Release|Win32
+		{FF0F694E-5C6F-485C-B5BA-9D8CB91E24A2}.Release MX|Win32.Build.0 = Release|Win32
+		{FF0F694E-5C6F-485C-B5BA-9D8CB91E24A2}.Release|Win32.ActiveCfg = Release|Win32
+		{FF0F694E-5C6F-485C-B5BA-9D8CB91E24A2}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

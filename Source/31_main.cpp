@@ -7,11 +7,7 @@
 #include <cstdio>
 #include <cstdint>
 #include <string>
-#include <gl/glew.h>
 #include <freegl/glut.h>
-#include <lodepng.h>
-#include <boost/filesystem/path.hpp>
-#include <boost/filesystem/operations.hpp>
 
 #include "TestLib.h"
 
@@ -121,8 +117,6 @@ int main( int argc, char* argv[] ) {
 	glutCreateWindow( "Hello OpenGL!!" );
 	glutDisplayFunc( display );
 	glutIdleFunc( idle );
-
-	glewInit();
 
 	initialize();
 	glutMainLoop();
