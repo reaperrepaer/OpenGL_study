@@ -242,6 +242,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "38_ステンシルテスト
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "39_鏡面反射", "Project\39_鏡面反射.vcxproj", "{254EF558-FCA0-4A39-AEA4-014CA1EC07A6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "41_スポットライト", "Project\41_スポットライト.vcxproj", "{E5426527-D8BE-483F-8C83-E8F32011BB6B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "40_ディスプレイリスト", "Project\40_ディスプレイリスト.vcxproj", "{0753DC81-6E9D-4151-BC1C-588208781D6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug MX|Win32 = Debug MX|Win32
@@ -594,6 +598,22 @@ Global
 		{254EF558-FCA0-4A39-AEA4-014CA1EC07A6}.Release MX|Win32.Build.0 = Release|Win32
 		{254EF558-FCA0-4A39-AEA4-014CA1EC07A6}.Release|Win32.ActiveCfg = Release|Win32
 		{254EF558-FCA0-4A39-AEA4-014CA1EC07A6}.Release|Win32.Build.0 = Release|Win32
+		{E5426527-D8BE-483F-8C83-E8F32011BB6B}.Debug MX|Win32.ActiveCfg = Debug|Win32
+		{E5426527-D8BE-483F-8C83-E8F32011BB6B}.Debug MX|Win32.Build.0 = Debug|Win32
+		{E5426527-D8BE-483F-8C83-E8F32011BB6B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E5426527-D8BE-483F-8C83-E8F32011BB6B}.Debug|Win32.Build.0 = Debug|Win32
+		{E5426527-D8BE-483F-8C83-E8F32011BB6B}.Release MX|Win32.ActiveCfg = Release|Win32
+		{E5426527-D8BE-483F-8C83-E8F32011BB6B}.Release MX|Win32.Build.0 = Release|Win32
+		{E5426527-D8BE-483F-8C83-E8F32011BB6B}.Release|Win32.ActiveCfg = Release|Win32
+		{E5426527-D8BE-483F-8C83-E8F32011BB6B}.Release|Win32.Build.0 = Release|Win32
+		{0753DC81-6E9D-4151-BC1C-588208781D6B}.Debug MX|Win32.ActiveCfg = Debug|Win32
+		{0753DC81-6E9D-4151-BC1C-588208781D6B}.Debug MX|Win32.Build.0 = Debug|Win32
+		{0753DC81-6E9D-4151-BC1C-588208781D6B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0753DC81-6E9D-4151-BC1C-588208781D6B}.Debug|Win32.Build.0 = Debug|Win32
+		{0753DC81-6E9D-4151-BC1C-588208781D6B}.Release MX|Win32.ActiveCfg = Release|Win32
+		{0753DC81-6E9D-4151-BC1C-588208781D6B}.Release MX|Win32.Build.0 = Release|Win32
+		{0753DC81-6E9D-4151-BC1C-588208781D6B}.Release|Win32.ActiveCfg = Release|Win32
+		{0753DC81-6E9D-4151-BC1C-588208781D6B}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
