@@ -246,6 +246,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "41_スポットライト", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "40_ディスプレイリスト", "Project\40_ディスプレイリスト.vcxproj", "{0753DC81-6E9D-4151-BC1C-588208781D6B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "42_テッセレーション", "Project\42_テッセレーション.vcxproj", "{7360602C-2B98-4DAF-856D-9B3897ECB0E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug MX|Win32 = Debug MX|Win32
@@ -614,6 +616,14 @@ Global
 		{0753DC81-6E9D-4151-BC1C-588208781D6B}.Release MX|Win32.Build.0 = Release|Win32
 		{0753DC81-6E9D-4151-BC1C-588208781D6B}.Release|Win32.ActiveCfg = Release|Win32
 		{0753DC81-6E9D-4151-BC1C-588208781D6B}.Release|Win32.Build.0 = Release|Win32
+		{7360602C-2B98-4DAF-856D-9B3897ECB0E9}.Debug MX|Win32.ActiveCfg = Debug|Win32
+		{7360602C-2B98-4DAF-856D-9B3897ECB0E9}.Debug MX|Win32.Build.0 = Debug|Win32
+		{7360602C-2B98-4DAF-856D-9B3897ECB0E9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7360602C-2B98-4DAF-856D-9B3897ECB0E9}.Debug|Win32.Build.0 = Debug|Win32
+		{7360602C-2B98-4DAF-856D-9B3897ECB0E9}.Release MX|Win32.ActiveCfg = Release|Win32
+		{7360602C-2B98-4DAF-856D-9B3897ECB0E9}.Release MX|Win32.Build.0 = Release|Win32
+		{7360602C-2B98-4DAF-856D-9B3897ECB0E9}.Release|Win32.ActiveCfg = Release|Win32
+		{7360602C-2B98-4DAF-856D-9B3897ECB0E9}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

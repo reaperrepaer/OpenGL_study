@@ -11,13 +11,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Source\41_main.cpp" />
+    <ClCompile Include="..\Source\42_main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E5426527-D8BE-483F-8C83-E8F32011BB6B}</ProjectGuid>
+    <ProjectGuid>{7360602C-2B98-4DAF-856D-9B3897ECB0E9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My41_スポットライト</RootNamespace>
-    <ProjectName>41_スポットライト</ProjectName>
+    <RootNamespace>My42_テッセレーション</RootNamespace>
+    <ProjectName>42_テッセレーション</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
