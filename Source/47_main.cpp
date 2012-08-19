@@ -307,13 +307,11 @@ public:
 			wglUseFontBitmapsW( deviceContext_, buf[i], 1, list + (DWORD)i );
 		}
 
-		glDisable( GL_LIGHTING );
 		glRasterPos2i( x, y );
 		//ディスプレイリストで描画
 		for ( int i=0; i<length; ++i ) {
 			glCallList( list + i );
 		}
-		glEnable( GL_LIGHTING );
 		//ディスプレイリスト破棄
 		glDeleteLists( list, length );
 	}
@@ -441,12 +439,13 @@ void draw() {
 	setColor( 0.5f, 0.5f, 1.0f, 1.0f );
 	drawOval( 50.0f, 150, 80, 100.0f, 80.0f );
 
-	setColor( 1.0f, 1.0f, 1.0f, 1.0f );
-	drawOvalFill( 80.0f, 260, 120, 50.0f, 100.0f );
 
 	setColor( 1.0f, 1.0f, 0.0f, 1.0f );
 	fontDrawer->drawStringW( 80, 150, L"あいうえお" );
 	fontDrawer->drawStringW( 80, 180, L"あいうえお" );
+
+	setColor( 1.0f, 1.0f, 1.0f, 1.0f );
+	drawOvalFill( 80.0f, 260, 120, 50.0f, 100.0f );
 
 	// ------------------------------------
 
