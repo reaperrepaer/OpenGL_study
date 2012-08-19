@@ -252,6 +252,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "44_VBO", "Project\44_VBO.vc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "43_頂点配列", "Project\43_頂点配列.vcxproj", "{7A364790-3B1B-41C4-8B56-4163BEECB1C2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "45_テクスチャ付きVBO", "Project\45_テクスチャ付きVBO.vcxproj", "{8D486E39-C08E-4B14-95CA-F9A67678EC12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug MX|Win32 = Debug MX|Win32
@@ -644,6 +646,14 @@ Global
 		{7A364790-3B1B-41C4-8B56-4163BEECB1C2}.Release MX|Win32.Build.0 = Release|Win32
 		{7A364790-3B1B-41C4-8B56-4163BEECB1C2}.Release|Win32.ActiveCfg = Release|Win32
 		{7A364790-3B1B-41C4-8B56-4163BEECB1C2}.Release|Win32.Build.0 = Release|Win32
+		{8D486E39-C08E-4B14-95CA-F9A67678EC12}.Debug MX|Win32.ActiveCfg = Debug|Win32
+		{8D486E39-C08E-4B14-95CA-F9A67678EC12}.Debug MX|Win32.Build.0 = Debug|Win32
+		{8D486E39-C08E-4B14-95CA-F9A67678EC12}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8D486E39-C08E-4B14-95CA-F9A67678EC12}.Debug|Win32.Build.0 = Debug|Win32
+		{8D486E39-C08E-4B14-95CA-F9A67678EC12}.Release MX|Win32.ActiveCfg = Release|Win32
+		{8D486E39-C08E-4B14-95CA-F9A67678EC12}.Release MX|Win32.Build.0 = Release|Win32
+		{8D486E39-C08E-4B14-95CA-F9A67678EC12}.Release|Win32.ActiveCfg = Release|Win32
+		{8D486E39-C08E-4B14-95CA-F9A67678EC12}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
