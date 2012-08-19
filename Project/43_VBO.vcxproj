@@ -11,13 +11,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Source\38_main.cpp" />
+    <ClCompile Include="..\Source\43_main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{09496466-FD57-4933-B720-3DCE03775228}</ProjectGuid>
+    <ProjectGuid>{EDCBDEF3-2B55-444C-8F36-38DED67A9296}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My38_ステンシルテスト</RootNamespace>
-    <ProjectName>38_ステンシルテスト</ProjectName>
+    <RootNamespace>My43_VBO</RootNamespace>
+    <ProjectName>43_VBO</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
