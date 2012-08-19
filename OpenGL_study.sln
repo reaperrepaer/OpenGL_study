@@ -256,6 +256,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "45_テクスチャ付きVBO
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "46_垂直同期", "Project\46_垂直同期.vcxproj", "{F57CD92F-B4F1-4ED0-99F1-5573E4E11B28}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "47_簡素化のテスト", "Project\47_簡素化のテスト.vcxproj", "{5356E51E-512D-43BB-B723-BA3A2AE1D18D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug MX|Win32 = Debug MX|Win32
@@ -664,6 +666,14 @@ Global
 		{F57CD92F-B4F1-4ED0-99F1-5573E4E11B28}.Release MX|Win32.Build.0 = Release|Win32
 		{F57CD92F-B4F1-4ED0-99F1-5573E4E11B28}.Release|Win32.ActiveCfg = Release|Win32
 		{F57CD92F-B4F1-4ED0-99F1-5573E4E11B28}.Release|Win32.Build.0 = Release|Win32
+		{5356E51E-512D-43BB-B723-BA3A2AE1D18D}.Debug MX|Win32.ActiveCfg = Debug|Win32
+		{5356E51E-512D-43BB-B723-BA3A2AE1D18D}.Debug MX|Win32.Build.0 = Debug|Win32
+		{5356E51E-512D-43BB-B723-BA3A2AE1D18D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5356E51E-512D-43BB-B723-BA3A2AE1D18D}.Debug|Win32.Build.0 = Debug|Win32
+		{5356E51E-512D-43BB-B723-BA3A2AE1D18D}.Release MX|Win32.ActiveCfg = Release|Win32
+		{5356E51E-512D-43BB-B723-BA3A2AE1D18D}.Release MX|Win32.Build.0 = Release|Win32
+		{5356E51E-512D-43BB-B723-BA3A2AE1D18D}.Release|Win32.ActiveCfg = Release|Win32
+		{5356E51E-512D-43BB-B723-BA3A2AE1D18D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
