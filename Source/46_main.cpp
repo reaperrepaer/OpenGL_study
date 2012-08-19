@@ -1,8 +1,11 @@
 ﻿/**
  * Referenced :
  * http://www21.atwiki.jp/opengl/pages/80.html
+ * wglについて
+ * http://sky.geocities.jp/freakish_osprey/opengl/opengl_vsync.htm
  *
  * 垂直同期
+ *
  * 
  */
 #pragma comment(linker, "/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
