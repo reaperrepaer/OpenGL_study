@@ -143,7 +143,7 @@ void initialize() {
 	glBufferData( GL_ARRAY_BUFFER, sizeof( UV ), UV, GL_DYNAMIC_DRAW );
 
 	namespace fs = boost::filesystem;  
-	fs::path image_path = fs::current_path() / "data/kuma.png";
+	fs::path image_path = fs::current_path() / "data/hituzi.png";
 	std::string str = image_path.string();
 
 	// テクスチャを作成
