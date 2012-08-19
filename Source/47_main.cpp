@@ -27,34 +27,104 @@ struct Rect {
 
 // テクスチャクラス
 class Texture {
-protected:
-	LodePNG_Decoder decoder;
-	unsigned char* buffer;
-	size_t buffersize;
-	size_t imagesize;
-
 public:
 	Texture() {}
-	Texture( const char* fileName ) {
-		loadPNG( fileName );
+	Texture( const char* FileName ) {
+		loadPNG( FileName );
 	}
 
 	void loadPNG( const char* FileName ) {// PNG読み込み
-		LodePNG_Decoder_init( &decoder );
-		LodePNG_loadFile( &buffer, &buffersize, FileName );
-		LodePNG_decode( &decoder, &image, &imagesize, buffer, buffersize );
-		Width = decoder.infoPng.width;Height = decoder.infoPng.height;
+		LodePNG_Decoder_init( &decoder_ );
+		LodePNG_loadFile( &buffer_, &buffersize_, FileName );
+		LodePNG_decode( &decoder_, &image, &imagesize_, buffer_, buffersize_ );
+		Width = decoder_.infoPng.width;
+		Height = decoder_.infoPng.height;
 	}
 
 	unsigned char* image;	// イメージポインタ
 	unsigned int Width;		// 画像サイズ
 	unsigned int Height;
+
+protected:
+	LodePNG_Decoder decoder_;
+	unsigned char* buffer_;
+	size_t buffersize_;
+	size_t imagesize_;
+};
+
+// 文字列描画クラス
+class FontDrawer {
+public:
+	FontDrawer( wchar_t* fontname, int size ) {
+		fontHandle_ = CreateFontW(
+			size,						// フォント高さ
+			0,							// 文字幅
+			0,							// テキストの角度
+			0,							// ベースラインとｘ軸との角度
+			FW_REGULAR,					// フォントの太さ
+			FALSE,						// イタリック体
+			FALSE,						// アンダーライン
+			FALSE,						// 打ち消し線
+			SHIFTJIS_CHARSET,			// 文字セット
+			OUT_DEFAULT_PRECIS,			// 出力精度
+			CLIP_DEFAULT_PRECIS,		// クリッピング精度
+			ANTIALIASED_QUALITY,		// 出力品質
+			FIXED_PITCH | FF_MODERN,	// ピッチとファミリー
+			fontname					// 書体名
+			);				
+
+		deviceContext_ = wglGetCurrentDC();
+		SelectObject( deviceContext_, fontHandle_ );
+	}
+
+	~FontDrawer() {
+	}
+
+	void drawStringW( int x, int y, wchar_t* format, ... ) {
+		// １フレーム目に１番目のフォントが表示されない件の回避
+		// ---
+		const int list_ = glGenLists( 1 );
+		wglUseFontBitmapsW( deviceContext_, L'a', 1, list_ );
+		glDeleteLists( list_, 1 );
+		// ---
+
+		if ( format == NULL ) {
+			return;
+		}
+
+		// 文字列変換
+		wchar_t buf[ 256 ];
+		va_list ap;
+		va_start( ap, format );
+		vswprintf_s( buf, format, ap );
+		va_end( ap );
+		
+		const int length = wcslen( buf );
+		const int list = glGenLists( length );
+		for ( int i=0; i<length; ++i ) {
+			wglUseFontBitmapsW( deviceContext_, buf[i], 1, list + (DWORD)i );
+		}
+
+		glDisable( GL_LIGHTING );
+		glRasterPos2i( x, y );
+		//ディスプレイリストで描画
+		for ( int i=0; i<length; ++i ) {
+			glCallList( list + i );
+		}
+		glEnable( GL_LIGHTING );
+		//ディスプレイリスト破棄
+		glDeleteLists( list, length );
+	}
+
+private:
+	HDC		deviceContext_;
+	HFONT	fontHandle_;
 };
 
 namespace {
 
-	const int DISPLAY_WIDTH = 320;
-	const int DISPLAY_HEIGHT = 240;
+	const int DISPLAY_WIDTH = 640;
+	const int DISPLAY_HEIGHT = 480;
 
 	const float PAI = 3.1415926535897932384626433832795f;
 	const float TO_RAD = PAI / 180.0f;
@@ -69,6 +139,8 @@ namespace {
 
 	GLuint texID;
 	Texture* texture;
+
+	shared_ptr<FontDrawer> fontDrawer;
 
 	// 3D描画用の設定
 	void setup3D() {
@@ -103,8 +175,22 @@ namespace {
 		glColor4f( r, g, b, a );
 	}
 
-	// ストレッチ描画
-	void drawStretch( Rect dst, Rect src ) {
+	void setTexture( int texID ) {
+		if ( texID ) {
+			glEnable( GL_TEXTURE_RECTANGLE_EXT );// 拡張機能を使う
+			glBindTexture( GL_TEXTURE_RECTANGLE_EXT, texID );
+		}
+		else {
+			glBindTexture( GL_TEXTURE_RECTANGLE_EXT, 0 );
+			glDisable( GL_TEXTURE_RECTANGLE_EXT );
+		}
+	}
+
+	void drawImage( int texID, int x, int y, int w, int h, int u, int v, int uw, int vh ) {
+		Rect dst( x, y, w, h );		// 貼り付ける元になる矩形
+		Rect src( u, v, uw, vh );	// テクスチャのどの部分を貼り付けるか
+
+		//////
 		glEnable( GL_TEXTURE_RECTANGLE_EXT );// 拡張機能を使う
 		glBindTexture( GL_TEXTURE_RECTANGLE_EXT, texID );
 
@@ -130,6 +216,14 @@ namespace {
 		glEnd();
 		glDisable( GL_ALPHA_TEST );// アルファテスト終了
 		glDisable( GL_TEXTURE_RECTANGLE_EXT );
+	}
+
+	void drawImage( int texID, int x, int y, int w, int h ) {
+		drawImage( texID, x, y, w, h, 0, 0, w, h );
+	}
+
+	void drawImage( int texID, int x, int y, int u, int v, int uw, int vh ) {
+		drawImage( texID, x, y, uw, vh, u, v, uw, vh );
 	}
 
 	void drawPoint( int x, int y, float size ) {
@@ -262,6 +356,9 @@ void initialize() {
 	glBindTexture( GL_TEXTURE_RECTANGLE_EXT, texID );
 	glTexImage2D( GL_TEXTURE_RECTANGLE_EXT, 0, GL_RGBA, texture->Width, texture->Height, 0, GL_RGBA, GL_UNSIGNED_BYTE, texture->image );
 	glDisable( GL_TEXTURE_RECTANGLE_EXT );
+
+	// フォント
+	fontDrawer = shared_ptr<FontDrawer>( new FontDrawer( L"ＭＳ明朝", 24 ) );
 }
 
 void finalize() {
@@ -301,13 +398,22 @@ void draw() {
 
 	setup2D();
 	// ----------- ここに2D描画 -----------
+	
+	int x = 0;
+	int y = 0;
+	int w = 128;
+	int h = 128;
+	int u = 0;
+	int v = 0;
+	int uw = 64;
+	int vh = 64;
+
 	glEnable( GL_TEXTURE_2D );
-
-	Rect dst( 0, 0, 128, 128 );// 貼り付ける元になる矩形
-	Rect src( 0, 0, 64, 64 );	// テクスチャのどの部分を貼り付けるか
 	setColor( 1.0f, 1.0f, 1.0f, 1.0f );
-	drawStretch( dst, src );
-
+	drawImage( texID, x, y, w, h, u, v, uw, vh );
+	drawImage( texID, 10, 200, 32, 32, 32, 32, 32, 32 );
+	drawImage( texID, 320, 200, 10, 10, 40, 40 );
+	drawImage( texID, 320, 300, 64, 64 );
 	glDisable( GL_TEXTURE_2D );
 
 	setColor( 1.0f, 0.0f, 0.0f, 1.0f );
@@ -334,6 +440,10 @@ void draw() {
 	setColor( 1.0f, 1.0f, 1.0f, 1.0f );
 	drawOvalFill( 80.0f, 260, 120, 50.0f, 100.0f );
 
+	setColor( 1.0f, 1.0f, 0.0f, 1.0f );
+	fontDrawer->drawStringW( 80, 150, L"あいうえお" );
+	fontDrawer->drawStringW( 80, 180, L"あいうえお" );
+
 	// ------------------------------------
 
 	glutSwapBuffers();
@@ -345,7 +455,7 @@ void display() {
 }
 
 void idle() {
-	angleX += 0.02f;
+	angleX += 0.2f;
 	glutPostRedisplay();
 }
 

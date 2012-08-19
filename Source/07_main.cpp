@@ -59,6 +59,8 @@ namespace {
 			int Length = wcslen( buf );
 			int list = glGenLists( Length );
 			for( int i=0; i<Length; ++i ) {
+				// 現在のOpenGLのレンダリングコンテキストで使用するための
+				// ビットマップディスプレイリストのセットを作成する。
 				wglUseFontBitmapsW( deviceContext_, buf[i], 1, list + (DWORD)i );
 			}
 
