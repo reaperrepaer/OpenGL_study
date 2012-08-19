@@ -248,7 +248,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "40_ディスプレイリス
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "42_テッセレーション", "Project\42_テッセレーション.vcxproj", "{7360602C-2B98-4DAF-856D-9B3897ECB0E9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "43_VBO", "Project\43_VBO.vcxproj", "{EDCBDEF3-2B55-444C-8F36-38DED67A9296}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "44_VBO", "Project\44_VBO.vcxproj", "{EDCBDEF3-2B55-444C-8F36-38DED67A9296}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
