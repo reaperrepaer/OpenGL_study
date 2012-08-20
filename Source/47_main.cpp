@@ -34,7 +34,7 @@ struct Rect {
 	int height;
 };
 
-// graphics --------------------------------
+// graphics基本 -----------------------------
 // 3D描画用の設定
 void setup3D() {
 	// 2D用に押し込んでいたマトリクスを戻す(親階層)
@@ -64,6 +64,7 @@ void setup2D() {
 	glDisable( GL_LIGHT0 );
 }
 
+// graphics2D図形描画 ------------------------
 void setColor( float r, float g, float b, float a ) {
 	glColor4f( r, g, b, a );
 }
@@ -83,11 +84,9 @@ void drawImage( int texID, int x, int y, int w, int h, int u, int v, int uw, int
 	Rect dst( x, y, w, h );		// 貼り付ける元になる矩形
 	Rect src( u, v, uw, vh );	// テクスチャのどの部分を貼り付けるか
 
-	//////
 	glEnable( GL_TEXTURE_RECTANGLE_EXT );// 拡張機能を使う
 	glBindTexture( GL_TEXTURE_RECTANGLE_EXT, texID );
 
-	glEnable( GL_ALPHA_TEST );// アルファテスト開始
 	glBegin( GL_POLYGON );
 	// 左下
 	glColor4f( 1.0f, 1.0f, 1.0f, 1.0f );
@@ -107,7 +106,6 @@ void drawImage( int texID, int x, int y, int w, int h, int u, int v, int uw, int
 	glVertex2d( dst.x+dst.width, dst.y+dst.height );
 
 	glEnd();
-	glDisable( GL_ALPHA_TEST );// アルファテスト終了
 	glDisable( GL_TEXTURE_RECTANGLE_EXT );
 }
 
@@ -226,6 +224,18 @@ void drawOvalFill( float radius, int x, int y, float ovalx, float ovaly ) {
 		glEnd();
 	}
 }
+
+// アルファテスト、アルファブレンド、デプス・ステンシルテスト -------------
+/*
+enum {
+	ALPHATEST,
+	ALPHABLEND,
+	DEPTHTEST,
+};
+
+void enable( int enums ) {
+}
+*/
 
 // texture ------------------------------
 class Texture {
@@ -400,7 +410,6 @@ void draw() {
 
 	setup2D();
 	// ----------- ここに2D描画 -----------
-	
 	int x = 0;
 	int y = 0;
 	int w = 128;
@@ -439,7 +448,6 @@ void draw() {
 	setColor( 0.5f, 0.5f, 1.0f, 1.0f );
 	drawOval( 50.0f, 150, 80, 100.0f, 80.0f );
 
-
 	setColor( 1.0f, 1.0f, 0.0f, 1.0f );
 	fontDrawer->drawStringW( 80, 150, L"あいうえお" );
 	fontDrawer->drawStringW( 80, 180, L"あいうえお" );
@@ -447,6 +455,22 @@ void draw() {
 	setColor( 1.0f, 1.0f, 1.0f, 1.0f );
 	drawOvalFill( 80.0f, 260, 120, 50.0f, 100.0f );
 
+	// アルファブレンド
+	glEnable( GL_BLEND );
+	glBlendFunc( GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA );
+	
+	glEnable( GL_ALPHA_TEST );
+	setColor( 0.0f, 1.0f, 1.0f, 1.0f );
+	drawFillRect( 400, 0, 100, 100 );
+
+	setColor( 0.0f, 1.0f, 0.0f, 0.5f );
+	drawFillRect( 450, 50, 100, 100 );
+
+	setColor( 1.0f, 1.0f, 1.0f, 0.5f );
+	drawImage( texID, 470, 60, 64, 64 );
+
+	glDisable( GL_ALPHA_TEST );
+	glDisable( GL_BLEND );
 	// ------------------------------------
 
 	glutSwapBuffers();
